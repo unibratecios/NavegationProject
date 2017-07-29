@@ -17,6 +17,7 @@
 		817090C21F2CEFFC00C1B962 /* YellowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 817090C11F2CEFFC00C1B962 /* YellowViewController.m */; };
 		817090C51F2CF00800C1B962 /* RedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 817090C41F2CF00800C1B962 /* RedViewController.m */; };
 		817090C81F2CF01800C1B962 /* BlueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 817090C71F2CF01800C1B962 /* BlueViewController.m */; };
+		817090F41F2D0F6600C1B962 /* MyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 817090F31F2D0F6600C1B962 /* MyTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,8 @@
 		817090C41F2CF00800C1B962 /* RedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedViewController.m; sourceTree = "<group>"; };
 		817090C61F2CF01800C1B962 /* BlueViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlueViewController.h; sourceTree = "<group>"; };
 		817090C71F2CF01800C1B962 /* BlueViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlueViewController.m; sourceTree = "<group>"; };
+		817090F21F2D0F6600C1B962 /* MyTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTableViewController.h; sourceTree = "<group>"; };
+		817090F31F2D0F6600C1B962 /* MyTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +106,8 @@
 				817090C41F2CF00800C1B962 /* RedViewController.m */,
 				817090C61F2CF01800C1B962 /* BlueViewController.h */,
 				817090C71F2CF01800C1B962 /* BlueViewController.m */,
+				817090F21F2D0F6600C1B962 /* MyTableViewController.h */,
+				817090F31F2D0F6600C1B962 /* MyTableViewController.m */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -185,6 +190,7 @@
 				817090C81F2CF01800C1B962 /* BlueViewController.m in Sources */,
 				817090C51F2CF00800C1B962 /* RedViewController.m in Sources */,
 				817090A71F2CD05700C1B962 /* main.m in Sources */,
+				817090F41F2D0F6600C1B962 /* MyTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

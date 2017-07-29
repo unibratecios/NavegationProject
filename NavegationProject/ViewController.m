@@ -53,7 +53,7 @@
         
         ((YellowViewController *) [segue destinationViewController]).nome = @"Kleyton teste";
         
-    }else{
+    }else if([segue.identifier isEqualToString:@"segueVermelho"]){
         ((RedViewController *) [segue destinationViewController]).nome = @"Kleyton teste";
     }
 }
