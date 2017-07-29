@@ -20,12 +20,23 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    self.valor1 = 30;
+    self.valor2 = 20;
 }
 
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender{
+    
+    if([identifier isEqualToString:@"segueAzul"]){
+        return self.valor1 < self.valor2;
+    }
+    
+    return YES;
 }
 
 #pragma mark - Navigation

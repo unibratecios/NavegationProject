@@ -10,5 +10,7 @@
 
 @interface ViewController : UIViewController
 
+@property(nonatomic,assign) int valor1;
+@property(nonatomic,assign) int valor2;
 
 @end
