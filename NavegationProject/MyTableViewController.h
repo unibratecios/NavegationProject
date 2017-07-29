@@ -12,4 +12,5 @@
 
 @property (weak, nonatomic) IBOutlet UITableView *tablewView;
 @property(strong,nonatomic) NSArray *array;
+@property(strong,nonatomic) NSArray *arrayDicionario;
 @end

@@ -20,6 +20,8 @@
     // Do any additional setup after loading the view.
     
     self.array = @[@"Segunda",@"Terça",@"Quarta",@"Quinta",@"Sexta",@"Sábado",@"Domingo"];
+    
+    self.arrayDicionario = @[@{@"nome":@"Kleyton", @"email": @"kleytonandroid@gmail.com", @"rua": @"rua nova descoberta",@"pais":@"brasil"},@{@"nome":@"Kleyton", @"email": @"kleytonandroid@gmail.com", @"rua": @"rua nova descoberta",@"pais":@"brasil"}];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -43,7 +45,7 @@
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return self.array.count;
+    return self.arrayDicionario.count;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -55,10 +57,12 @@
     
         CustomTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CustomCell" forIndexPath:indexPath];
     
-    cell.nomeLabel.text = self.array[indexPath.row];
-    cell.emailLabel.text = @"kreito@gmail.com";
-    cell.ruaLabel.text = @"rua tal";
-    cell.paisLabel.text = @"país tal";
+    NSDictionary *dic = self.arrayDicionario[indexPath.row];
+    
+    cell.nomeLabel.text = dic[@"nome"];
+    cell.emailLabel.text =  dic[@"email"];
+    cell.ruaLabel.text =  dic[@"rua"];
+    cell.paisLabel.text =  dic[@"pais"];
         return cell;
 }
 
