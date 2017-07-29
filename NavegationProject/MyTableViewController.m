@@ -7,6 +7,7 @@
 //
 
 #import "MyTableViewController.h"
+#import "CustomTableViewCell.h"
 
 @interface MyTableViewController ()
 
@@ -46,10 +47,18 @@
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
 
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"orangeCell" forIndexPath:indexPath];
+//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"orangeCell" forIndexPath:indexPath];
+//    
+//    cell.textLabel.text = self.array[indexPath.row];
+//    return cell;
     
-    cell.textLabel.text = self.array[indexPath.row];
-    return cell;
+        CustomTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CustomCell" forIndexPath:indexPath];
+    
+    cell.nomeLabel.text = self.array[indexPath.row];
+    cell.emailLabel.text = @"kreito@gmail.com";
+    cell.ruaLabel.text = @"rua tal";
+    cell.paisLabel.text = @"país tal";
+        return cell;
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
