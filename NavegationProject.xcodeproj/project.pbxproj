@@ -14,6 +14,9 @@
 		817090B21F2CD05700C1B962 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 817090B11F2CD05700C1B962 /* Assets.xcassets */; };
 		817090B51F2CD05700C1B962 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 817090B31F2CD05700C1B962 /* LaunchScreen.storyboard */; };
 		817090BE1F2CD66700C1B962 /* UltimaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 817090BD1F2CD66700C1B962 /* UltimaViewController.m */; };
+		817090C21F2CEFFC00C1B962 /* YellowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 817090C11F2CEFFC00C1B962 /* YellowViewController.m */; };
+		817090C51F2CF00800C1B962 /* RedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 817090C41F2CF00800C1B962 /* RedViewController.m */; };
+		817090C81F2CF01800C1B962 /* BlueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 817090C71F2CF01800C1B962 /* BlueViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,12 @@
 		817090B61F2CD05700C1B962 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		817090BC1F2CD66700C1B962 /* UltimaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UltimaViewController.h; sourceTree = "<group>"; };
 		817090BD1F2CD66700C1B962 /* UltimaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UltimaViewController.m; sourceTree = "<group>"; };
+		817090C01F2CEFFC00C1B962 /* YellowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YellowViewController.h; sourceTree = "<group>"; };
+		817090C11F2CEFFC00C1B962 /* YellowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YellowViewController.m; sourceTree = "<group>"; };
+		817090C31F2CF00800C1B962 /* RedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedViewController.h; sourceTree = "<group>"; };
+		817090C41F2CF00800C1B962 /* RedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedViewController.m; sourceTree = "<group>"; };
+		817090C61F2CF01800C1B962 /* BlueViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlueViewController.h; sourceTree = "<group>"; };
+		817090C71F2CF01800C1B962 /* BlueViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlueViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,17 +70,14 @@
 		817090A41F2CD05700C1B962 /* NavegationProject */ = {
 			isa = PBXGroup;
 			children = (
+				817090BF1F2CEFE600C1B962 /* UI */,
 				817090A81F2CD05700C1B962 /* AppDelegate.h */,
 				817090A91F2CD05700C1B962 /* AppDelegate.m */,
-				817090AB1F2CD05700C1B962 /* ViewController.h */,
-				817090AC1F2CD05700C1B962 /* ViewController.m */,
 				817090AE1F2CD05700C1B962 /* Main.storyboard */,
 				817090B11F2CD05700C1B962 /* Assets.xcassets */,
 				817090B31F2CD05700C1B962 /* LaunchScreen.storyboard */,
 				817090B61F2CD05700C1B962 /* Info.plist */,
 				817090A51F2CD05700C1B962 /* Supporting Files */,
-				817090BC1F2CD66700C1B962 /* UltimaViewController.h */,
-				817090BD1F2CD66700C1B962 /* UltimaViewController.m */,
 			);
 			path = NavegationProject;
 			sourceTree = "<group>";
@@ -82,6 +88,23 @@
 				817090A61F2CD05700C1B962 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		817090BF1F2CEFE600C1B962 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				817090AB1F2CD05700C1B962 /* ViewController.h */,
+				817090AC1F2CD05700C1B962 /* ViewController.m */,
+				817090BC1F2CD66700C1B962 /* UltimaViewController.h */,
+				817090BD1F2CD66700C1B962 /* UltimaViewController.m */,
+				817090C01F2CEFFC00C1B962 /* YellowViewController.h */,
+				817090C11F2CEFFC00C1B962 /* YellowViewController.m */,
+				817090C31F2CF00800C1B962 /* RedViewController.h */,
+				817090C41F2CF00800C1B962 /* RedViewController.m */,
+				817090C61F2CF01800C1B962 /* BlueViewController.h */,
+				817090C71F2CF01800C1B962 /* BlueViewController.m */,
+			);
+			name = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,8 +179,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				817090BE1F2CD66700C1B962 /* UltimaViewController.m in Sources */,
+				817090C21F2CEFFC00C1B962 /* YellowViewController.m in Sources */,
 				817090AD1F2CD05700C1B962 /* ViewController.m in Sources */,
 				817090AA1F2CD05700C1B962 /* AppDelegate.m in Sources */,
+				817090C81F2CF01800C1B962 /* BlueViewController.m in Sources */,
+				817090C51F2CF00800C1B962 /* RedViewController.m in Sources */,
 				817090A71F2CD05700C1B962 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

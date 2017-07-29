@@ -7,6 +7,9 @@
 //
 
 #import "ViewController.h"
+#import "BlueViewController.h"
+#import "YellowViewController.h"
+#import "RedViewController.h"
 
 @interface ViewController ()
 
@@ -31,11 +34,16 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if([segue.identifier isEqualToString:@"segueAzul"]){
     
+        BlueViewController *blueViewController = [segue destinationViewController];
+        blueViewController.nome = @"Kleyton teste";
+        
     
     }else if([segue.identifier isEqualToString:@"segueAmarelo"]){
         
+        ((YellowViewController *) [segue destinationViewController]).nome = @"Kleyton teste";
         
     }else{
+        ((RedViewController *) [segue destinationViewController]).nome = @"Kleyton teste";
     }
 }
 

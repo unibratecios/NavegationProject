@@ -1,5 +1,5 @@
 //
-//  UltimaViewController.h
+//  BlueViewController.h
 //  NavegationProject
 //
 //  Created by Treinamento on 29/07/17.
@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UltimaViewController : UIViewController
+@interface BlueViewController : UIViewController
 
 @property(nonatomic,strong) NSString *nome;
+@property (weak, nonatomic) IBOutlet UILabel *labelNome;
 
 @end
